@@ -1,11 +1,14 @@
  import { View, Text, Image, StatusBar, TextInput, TouchableOpacity } from 'react-native'
  import React from 'react'
+ import { useState } from 'react';
  import Animated,{ FadeIn,FadeInUp, FadeOut } from 'react-native-reanimated';
 import { useNavigation } from '@react-navigation/native';
 
 
  export default function LoginScreen() {
   const navigation = useNavigation();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
    return (
      <View className="bg-white h-full w-full pt-5">
      <StatusBar style="light"></StatusBar>
