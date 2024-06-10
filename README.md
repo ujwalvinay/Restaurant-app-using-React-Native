@@ -1,4 +1,4 @@
-# Reanimated example
+# Login App using React Native
 
 <p>
   <!-- iOS -->
@@ -10,10 +10,11 @@
 
 ## 🚀 How to use
 
+<p>Install React Native and React Native Re-animated</p>
 > `npx create-expo my-app --example with-reanimated`
 
 - Run `yarn` or `npm install`
-- Run `yarn start` or `npm run start` to try it out.
+- Run `yarn start` or `npm run android` to try it out.
 
 ## 📝 Notes
 
