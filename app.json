@@ -1,4 +1,15 @@
 {
-  "name": "login-app",
-  "slug": "login-app"
+  "expo":{
+     "name": "login-app",
+      "slug": "login-app",
+      "version":"1.0.0",
+      "orientation":"portrait",
+      "icon":"https://ujwalvinay.com/project/bakery-logo.png",
+      "splash":{
+        "image" : "https://ujwalvinay.com/project/bakery-logo.png",
+        "resizeMode":"contain",
+        "backgroundColor" : "#000000"
+      }
+  }
+ 
 }
