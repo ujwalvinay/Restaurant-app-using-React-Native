@@ -4,6 +4,8 @@ import Animated, { FadeInUp } from 'react-native-reanimated';
 import { useNavigation } from '@react-navigation/native';
 import { ScrollView, SafeAreaView } from 'react-native';
 
+import foodData from './components/data/Items';
+
 import FoodCard from './components/foodCard'
 export default function Home() {
   return (
@@ -17,27 +19,9 @@ export default function Home() {
         </View>
         <SafeAreaView>
       <ScrollView className="pb-10" contentContainerStyle={{ paddingBottom: 200  }}>        
-      <FoodCard 
-          name="Delicious Cake"
-          image="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/rainbow_cake_20402_16x9.jpg"
-          price="20.00"
-        />
-        <FoodCard
-          name="croissant"
-          image="https://www.shutterstock.com/image-photo/single-plain-croissant-on-white-260nw-2318302719.jpg"
-          price="5.00"
-        />
-        <FoodCard
-          name="Donut"
-          image="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/02/colorful-glazed-donuts.jpg"
-          price="5.00"
-        />
-        <FoodCard
-          name="Macarons"
-          image="https://blog.ciachef.edu/wp-content/uploads/2016/11/Macarons.jpg"
-          price="5.00"
-        />
-        {/* Add more ItemCard components as needed */}
+            {foodData.map((item, index) => (
+              <FoodCard key={index} name={item.name} image={item.image} price={item.price} />
+            ))}
       </ScrollView>
       </SafeAreaView>
       </View>
